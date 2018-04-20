@@ -9,8 +9,9 @@ import { HttpModule } from "@angular/http";
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './modules/Header/Header.component';
 import { FooterComponent } from './modules/Footer/Footer.component';
+import { HomeworkComponent } from './Page/Homework/Homework.component';
 
-import { HomePageComponent } from './page/HomePage/HomePage.component'; 
+import { HomePageComponent } from './page/HomePage/HomePage.component';
 import { HttpClient } from "@angular/common/http";
 import { HttpClientModule } from "@angular/common/http";
 import { MDBBootstrapModule } from './typescripts/free/index';
@@ -18,12 +19,13 @@ import { MDBBootstrapModulePro } from './typescripts/pro/index';
 
 @NgModule({
     declarations: [
-        AppComponent,       
+        AppComponent,
         HeaderComponent,
-        FooterComponent,       
-        HomePageComponent
-       
-         ],
+        FooterComponent,
+        HomePageComponent,
+        HomeworkComponent
+
+    ],
     imports: [
         BrowserModule,
         FormsModule,
@@ -32,17 +34,17 @@ import { MDBBootstrapModulePro } from './typescripts/pro/index';
         Routing,
         NgbModule.forRoot(),
         MDBBootstrapModule.forRoot(),
-        MDBBootstrapModulePro.forRoot(),       
+        MDBBootstrapModulePro.forRoot(),
         HttpModule,
         HttpClientModule,
-        
+
     ],
-    
+
     bootstrap: [AppComponent],
-    schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA],    
+    schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {
     constructor(private injector: Injector) {
-       
+
     }
 }
