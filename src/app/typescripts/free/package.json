@@ -33,7 +33,7 @@
   },
   "homepage": "https://mdbootstrap.com",
   "dependencies": {
-  "moment": "2.18.x"
+  "moment": "2.24.x"
   },
   "peerDependencies": {
   "@angular/animations": "4.3.x ||^2.0.0",
