@@ -1,15 +1,10 @@
-import { Component,ViewChild} from '@angular/core';
-import { ToastService } from './typescripts/pro/alerts';
-import { IMyOptions } from './typescripts/pro/date-picker/index';
-import { HeaderComponent } from './modules/Header/Header.component';
-import { FooterComponent } from './modules/Footer/Footer.component';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app.component.html' 
-
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  @ViewChild(HeaderComponent) header: HeaderComponent;
-  @ViewChild(FooterComponent) footer: FooterComponent;
+  title = 'web-app';
 }
